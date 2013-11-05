@@ -1,4 +1,6 @@
-## What is this?
+# Emacs Mac Port
+
+## What is this? ##
 
 This is "Mac port" addition to GNU Emacs 24.  This provides a native
 GUI support for Mac OS X 10.4 - 10.9.  Note that Emacs 23 and later
@@ -6,7 +8,7 @@ already contain the official GUI support via the NS (Cocoa) port for
 Mac OS X 10.4 and later.  So if it is good enough for you, then you
 don't need to try this.
 
-### *** IMPORTANT NOTE ***
+#### IMPORTANT NOTE ####
 
 If you find a bug, then please try to reproduce it with some
 official builds such as X11 or NS (Cocoa).  If it turns out to be
@@ -15,17 +17,15 @@ specific to the Mac port, then please report it to
 it is also reproducible with official ones), report it using <kbd>M-x</kbd>
 report-emacs-bug *USING THE OFFICIAL BUILD* as such.
 
-## Features
-This build has *many* features, a great number of which are particularly helpful for Mac users. You can see the full list <a href="https://github.com/railwaycat/emacs-mac-port/blob/master/README-mac.md">here</a>. 
+## Features ##
+This build has *many* features, a great number of which are particularly helpful for Mac users. You can see the full list <a href="https://github.com/railwaycat/emacs-mac-port/blob/master/README-mac.md#features">here</a>. 
 
-## Installation options
+## Installation options ##
 
 
 ### Download ###
 
-Without clone and compile, just download from
-
-https://github.com/railwaycat/emacs-mac-port/wiki/Downloads
+Without clone and compile, just download from https://github.com/railwaycat/emacs-mac-port/wiki/Downloads
 
 ### Homebrew ###
 If you'd like to install with Homebrew, please
@@ -53,7 +53,7 @@ Build a self-contained Emacs.app with build-emacs.app.sh
 	If you cloned this repository before:
        `$ git pull`
 
-2. Follow the step h. i. j. in "2. Build instructions" from README-mac
+2. Follow the step h. i. j. in the <a href="https://github.com/railwaycat/emacs-mac-port/blob/master/README-mac.md#how-to-build-it-from-the-source">build instructions</a>
 
 	You can SKIP step a. b. c. d. e. f. and g. because code in this repository was patched already.
 
@@ -69,12 +69,12 @@ https://gist.github.com/3498096
 
 * An Emacs.app CLI starter, modified from Aquamacs - https://gist.github.com/4043945
 
-## Changelog
+## Changelog ##
 
-#### 10/27/2013 #### 
+#### 10/27/2013 ####
   * PDF patch, mark as 4.4.1
 
-#### 10/25/2013 #### 
+#### 10/25/2013 ####
   * Emacs 24.3    with emacs-24.3-mac-4.4
 
 #### 09/24/2013 ####
@@ -117,8 +117,8 @@ https://gist.github.com/3498096
 
 #### 07/28/2012 ####
   * Emacs 24.1    with emacs-24.1-mac-3.1
-
   * macfont patch for 10.8
+
 #### 05/24/2012 ####
   * fix emacs-mac.rb for homebrew
 
