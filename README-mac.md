@@ -1,4 +1,4 @@
-## What is this?
+## What is this? ##
 
 This is "Mac port" addition to GNU Emacs 24.  This provides a native
 GUI support for Mac OS X 10.4 - 10.9.  Note that Emacs 23 and later
@@ -6,7 +6,7 @@ already contain the official GUI support via the NS (Cocoa) port for
 Mac OS X 10.4 and later.  So if it is good enough for you, then you
 don't need to try this.
 
-### *** IMPORTANT NOTE ***
+#### IMPORTANT NOTE ####
 
 If you find a bug, then please try to reproduce it with some
 official builds such as X11 or NS (Cocoa).  If it turns out to be
@@ -33,18 +33,18 @@ Emacs and participated in the development until late 2003.
 The Mac port inherits mostly the same features with the Carbon
 port including the following, all of which were added after 2004:
 
-- ** <kbd>C-g</kbd> handling **
+- **<kbd>C-g</kbd> handling**
 
   You can quit `(while t)` and `(shell-command "sleep 100")`.
   No bogus menu bar activation while these evaluations.
 
-- ** Emulation of `select` without periodic polling **
+- **Emulation of `select` without periodic polling**
   
   It doesn't use CPU time while the Lisp interpreter is idle and
   waiting for some events to come, even with subprocesses or
   network connections.
 
-- ** Graceful termination **
+- **Graceful termination**
 
   If you try logout/shutdown/reboot while leaving a file-visiting
   buffer modified and unsaved, a popup window appears for
@@ -55,7 +55,7 @@ port including the following, all of which were added after 2004:
   don't have unsaved buffers, shell buffers, etc., you won't see
   unnecessary confirmation.
 
-- ** Apple event handling **
+- **Apple event handling**
 
   One can define Apple event handlers at the Lisp level.
   Actually, graceful termination above is an instance of
@@ -70,7 +70,7 @@ to open location "mailto:foo@example.com"'
   the Emacs mailer will set up a draft buffer when you click a
   mailto: link in a Web browser.
 
-- ** DictionaryService support **
+- **DictionaryService support**
  
   You can look up a word under the mouse pointer in the selected
   window by typing Command-Control-D (or double/single-tapping a
@@ -90,20 +90,20 @@ Cocoa/GNUstep port (aka "Emacs.app" or the NS port).
 The Mac port also inherits the features of the Carbon+AppKit port
 including the following:
 
-- ** Resolution independence (10.4 - 10.6, 10.5 recommended) **
+- **Resolution independence (10.4 - 10.6, 10.5 recommended)**
 
   Scaling works in Framework-Scaled Mode as opposed to (blurry)
   Magnified Mode for the Carbon port.
   Note: this type of resolution independence is deprecated on Mac
   OS X 10.7.
 
-- ** 64-bit (10.5 and later) **
+- **64-bit (10.5 and later)**
 
   You can build and run a 64-bit binary with GUI support by
   specifying `CC="gcc -arch x86_64"` or `CC="gcc -arch ppc64"` on
   configure.
 
-- ** Some minor visual enhancements **
+- **Some minor visual enhancements**
 
   * Aligned key bindings in menus
   * Progress indicator (corresponding to hourglass) in the title bar
@@ -235,7 +235,7 @@ Dock without separating a GUI process (not thread) from the main Emacs
 ## How to build it from the source ##
 
 
-*** NOTE ***: Some older versions of Xcode for Mac OS X 10.4 are known to be
+***NOTE***: Some older versions of Xcode for Mac OS X 10.4 are known to be
 incompatible with newer versions of WebKit.  At least, Xcode 2.4.1
 works, but Xcode 2.1 has some problems.
 
@@ -253,8 +253,8 @@ c. Copy the subdirectory `mac` to `EMACS_SOURCE_TOP`.
 
 d. [Optional]
    If you want to use the icon bundled with Emacs 24, then copy
-   `EMACS_SOURCE_TOP/nextstep/Cocoa/Emacs.base/Contents/Resources/Emacs.icns'
-   to `EMACS_SOURCE_TOP/mac/Emacs.app/Contents/Resources/Emacs.icns'
+   `EMACS_SOURCE_TOP/nextstep/Cocoa/Emacs.base/Contents/Resources/Emacs.icns`
+   to `EMACS_SOURCE_TOP/mac/Emacs.app/Contents/Resources/Emacs.icns`
    by overriding the latter.
 
 e. [Optional, recommended for Retina Display]
@@ -263,7 +263,7 @@ e. [Optional, recommended for Retina Display]
    subdirectory `etc/images` to `EMACS_SOURCE_TOP/etc/images`.
 
 f. Copy all the files in the `src` subdirectory to
-   `EMACS_SOURCE_TOP/src'.
+   `EMACS_SOURCE_TOP/src`.
 
 j. Copy `lisp/term/mac-win.el` to
    `EMACS_SOURCE_TOP/lisp/term/mac-win.el`.
